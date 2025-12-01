@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <div class="screen active" id="start-screen">
+      <h1>Quiz Challenge</h1>
+      <p>Test your knowledge with these fun questions!</p>
+      <div class="instructions">
+        <ul>
+          <li><strong>Number of questions:</strong> 15</li>
+          <li><strong>Time limit:</strong> 20 minutes</li>
+          <li><strong>Scoring:</strong> 1 point per correct answer</li>
+          <li><strong>Format:</strong> Multiple-choice questions, one at a time</li>
+        </ul>
+
+        <div class="user-info">
+      <p><strong>Name:</strong>CHARU TIKKIWAL</p>
+      <p><strong>Roll No:</strong>22515500024</p>
+      <p><strong>College:</strong>Gla University</p>
+    </div>
+      </div>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div class="screen" id="quiz-screen">
+      <div class="quiz-header">
+        <h2 id="question-text">Question goes here</h2>
+        <div class="quiz-info">
+          <span>Question <span id="current-question">1</span> / <span id="total-questions">15</span></span>
+          <span id="timer">20:00</span>
+        </div>
+      </div>
+      <div id="answers-container" class="answers-container"></div>
+      <div class="navigation">
+        <button id="prev-btn" disabled>Previous</button>
+        <button id="next-btn">Next</button>
+        <button id="submit-btn" class="d-none">Submit Quiz</button>
+      </div>
+    </div>
+
+    <div class="screen" id="result-screen">
+      <h1>Quiz Results</h1>
+      <div class="score-summary">
+        <p>You scored <span id="final-score">0</span> / <span id="max-score">15</span></p>
+      </div>
+      <div id="detailed-results" class="detailed-results"></div>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+
+
+    
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
